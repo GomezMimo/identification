@@ -98,19 +98,25 @@ body{
 }
 
 #badge{
-	border:1px solid gray;
+	border:1px solid #000;
 	border-radius: 2px;
+	box-shadow: 2px 2px 4px #000;
 	margin: 40px auto;
+	overflow: hidden;
 	padding: 0px;
 	width: 450px;
 }
 
-	#badge > div{
-		border: 1px solid #ffd700;	
+#{
+	border: 1px solid #ffd700;	
+}
+
+	#info > div{
+		border: 0px solid #ffd700;	
 		padding-left: 20px;
 	}
 
-	#badge > div > p{
+	#badge > #info  p{
 		font-weight: ;
 		margin-bottom: 15px;
 	}
@@ -130,8 +136,14 @@ body{
 	font-weight: none !important;
 }
 
-img{
+#img > img{
 	border-radius: 50%;
 	float: right;
-	width: 140px;
+	margin-right: 20px;
+	margin-top: 30px;
+	width: 180px;
+}
+
+#tales{
+	float:left;	
 }
