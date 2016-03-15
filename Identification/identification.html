@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/identification.css"/>
 		<title>Create your own identification</title>
-		<script type="text/javascript" src="scripts/">
-		</script>
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/identification.js"></script>				
 	</head>
 	<body>		
 		<div id="container">
@@ -17,19 +17,19 @@
 				<form>
 					<p>
 						<label>Firstname: </label>
-						<input type="text" placeholder="Your name" autofocus="autofocus">	
+						<input type="text" placeholder="Your name" autofocus="autofocus" id="firstname">	
 					</p>
 					<p>
 						<label>Lastname: </label>
-						<input type="text" placeholder="Your lastname">	
+						<input type="text" placeholder="Your lastname" id="lastname">	
 					</p>
 					<p>
 						<label>ID number: </label>
-						<input type="text" placeholder="Your identification">	
+						<input type="text" placeholder="Your identification" id="id"> 	
 					</p>
 					<p>
 						<label>Country: </label>
-						<input type="text" placeholder="Your Country">	
+						<input type="text" placeholder="Your Country" id="country">	
 					</p>
 				</form>
 			</section>
@@ -38,21 +38,25 @@
 				<div id="info">
 					<div id="tales">
 						<p>
-						<header  id="country">
-							<h1>Colombian republic</h1>
-							<h2>Personal identification</h2>
+						<header>
+							<h1 id="country_text"></h1>
+							<h2>PERSONAL IDENTIFICATION</h2>
 						</header>
 						</p>
-						<p><span class="label">ID:</span> 1033755775</p>
-						<p>Gómez González<br/><span class="label">Lastname</span></p>
-						<p>Juan Camilo<br/><span class="label">Name</span></p>
-						<p>Here comes de sign</p>																										
+						<p><span class="label">ID:</span><span id="id_text"></span></p>
+						<p><span id="lastname_text"></span><br/><span class="label">Lastname</span></p>
+						<p><span id="firstname_text"></span><br/><span class="label">Name</span></p>
+						<p>
+							<span id="signature">
+								Juan Gómez
+							</span>
+						</p>																										
 					</div>	
 					<div id="img">
 						<img src="images/photo.jpg">
 					</div>				
 				</div>				
 			</section>
-		</div>
+		</div>			
 	</body>
 </html>

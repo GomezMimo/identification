@@ -50,6 +50,11 @@ table {
 
 /*CSS for the site*/
 
+@font-face{
+	font-family: signature;
+	src: url('../fonts/signature1.ttf');
+}
+
 body{
 	background: black;
 	font-family: arial;
@@ -61,7 +66,7 @@ body{
 #container{
 	border: 1px solid black;
 	border-radius: 4px;
-	background: white;
+	background: #fff;
 	margin: 30px auto;
 	padding:30px;
 	width: 600px;
@@ -126,8 +131,8 @@ body{
 		font-weight: bold;
 	}
 
-	#country > h2{
-		font-size: 16px;	
+	header > h2{
+		font-size: 14px;	
 		font-style: italic;
 	}
 
@@ -141,9 +146,19 @@ body{
 	float: right;
 	margin-right: 20px;
 	margin-top: 30px;
+	margin-bottom: 20px;
 	width: 180px;
 }
 
 #tales{
 	float:left;	
+}
+
+#signature{
+	font-family: signature;
+	font-size: 32px;	
+}
+
+#country_text, #firstname_text, #lastname_text, #id_text {
+	text-transform: uppercase;
 }
