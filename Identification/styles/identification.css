@@ -155,10 +155,21 @@ body{
 }
 
 #signature{
+	/*display: none;*/
 	font-family: signature;
 	font-size: 32px;	
 }
 
+#signature_button{
+	font-size: 12px !important;
+	margin-left: 130px;	
+	width: 120px !important;
+}
+
 #country_text, #firstname_text, #lastname_text, #id_text {
 	text-transform: uppercase;
+}
+
+input[type = "button"]{
+	margin-right: 20px;
 }
